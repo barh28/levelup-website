@@ -1,0 +1,140 @@
+.main-frame {
+    background-image: url("../../Images/homePhoto.jpg");
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 635px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.main-frame .div-2{
+    align-items: center;
+    left: 1060px;
+    padding: 30px 10px;
+    margin-top: 70px;
+    position: absolute;
+    top: 155px;
+    width: fit-content;
+}
+
+.main-frame .div-3{
+    align-items: center;
+    display: flex;
+    gap: 8px;
+    height: 70px;
+    padding: 10px;
+    position: relative;
+    width: 340px;
+}
+
+.main-frame .text-wrapper-6 {
+    color: #000000;
+    direction: rtl;
+    font-family: "Arimo hebrew Subset-Regular", Helvetica;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: -1.5px;
+    margin-top: -3.5px;
+    position: relative;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.main-frame .icon-dot{
+    height: 10px !important;
+    position: relative;
+    width: 16px;
+}
+
+.main-frame .text-wrapper-7{
+    color: #000000;
+    font-family: "Arial Rounded MT Bold-Regular";
+    font-size: 72px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+    position: relative;
+    text-align: right;
+    white-space: nowrap;
+    width: fit-content;
+    margin-left: 6px;
+}
+
+.main-frame .text-wrapper-8 {
+    color: #000000;
+    direction: rtl;
+    font-family: "Arimo Hebrew Subset-Regular";
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+    position: relative;
+    white-space: nowrap;
+    width: fit-content;
+    margin-bottom: 40px;
+    margin-top: 30px;
+    margin-left: 23px;
+}
+
+.main-frame .button {
+    align-items: center !important;
+    display: flex !important;
+    justify-content: center !important;
+    margin-left: 65px !important;
+    width: 150px ;
+    height: 40px;
+}
+
+.main-frame .button .text-wrapper{
+    font-size: 25px;
+}
+
+/* Accessibility icon */
+.main-frame .accessibility-instance {
+    left: 1380px; /* Original position */
+    top: 70px;
+    position: absolute;
+    transition: left 0.3s ease; /* Smooth transition for movement */
+    z-index: 4 !important; /* Ensure it's above or below other elements as needed */
+}
+
+/* Position when menu is open */
+.main-frame .accessibility-instance.menu-open {
+    left: calc(1380px - 140px); /* Adjust based on the width of your menu */
+}
+
+
+/* Ensure that the button and menu transition smoothly */
+.main-frame .accessibility-instance {
+    transition: transform 0.3s ease;
+}
+
+/* Adjust the transform when the menu is open to move the button and show the menu */
+.main-frame .accessibility-instance.menu-open {
+    transform: translateX(-140px); /* Adjust this value to match your menu's width */
+}
+
+/* Initially, the menu is off the screen to the right */
+.main-frame .accessibility-menu {
+    transition: transform 0.3s ease;
+    transform: translateX(100%);
+    position: absolute;
+    width: 200px; 
+}
+
+/* When the menu is open, reset the transform to bring it into view */
+.main-frame .menu-open .accessibility-menu-wrap {
+    transform: translateX(70%);
+}
+
+.main-frame .menu-open .accessibility-menu {
+    right: 41px;
+    top: -60px;
+}
+
+.main-frame .menu-closed .accessibility-menu{
+    right: -3px !important;
+    top: 0px;
+}

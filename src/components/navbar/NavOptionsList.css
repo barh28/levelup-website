@@ -1,0 +1,37 @@
+.nav-link {
+  position: relative; /* This ensures the dropdown is positioned relative to the nav-link */
+  /* Other styles... */
+}
+
+.nav-optionslist {
+  align-items: center;
+  background-color: #f6f6f6;
+  box-shadow: 0px 4px 4px #00000040;
+  display: none; /* Hide by default */
+  flex-direction: column;
+  position: absolute; /* Positioned absolutely to the nav-link */
+  top: 100%; /* Positioned right below the nav-link */
+  left: 0; /* Align it to the left edge of the nav-link */
+  right: 5px;
+  z-index: 1000; /* Ensures it's on top of other content */
+  width: 200px; /* Width can be adjusted as needed */
+}
+
+.nav-link.active .nav-optionslist {
+  display: flex; /* Show when the nav-link is active */
+}
+
+.nav-optionslist .frame {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  height: 68px;
+  justify-content: center;
+  padding: 10px;
+  width: 100%; /* Width can be adjusted as needed */
+}
+
+/* The negative margins in .OptionsList-instance may not be necessary unless you have a specific reason for them. */
+.nav-optionslist .OptionsList-instance { 
+  margin-left: -5px !important;
+} 

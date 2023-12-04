@@ -1,0 +1,24 @@
+.accessibility {
+    align-items: center;
+    background-color: #f88055;
+    border-radius: 10px;
+    display: flex;
+    gap: 10px;
+    height: 40px;
+    justify-content: center;
+    overflow: hidden;
+    padding: 10px 10px;
+    position: relative;
+    width: 40px;
+    cursor: pointer;
+}
+
+.accessibility:hover{
+    background-color: #ff5f25;
+}
+
+.accessibility .icon-accessibility {
+    height: 40px;
+    position: relative;
+    width: 40px;
+}

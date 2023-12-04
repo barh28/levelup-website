@@ -1,0 +1,68 @@
+.nav-link {
+  height: auto;
+  position: relative;
+  display: inline-block; /* This will make the width as per content */
+  padding: 0; /* Adjust padding as needed */
+  position: relative;
+  cursor: pointer;
+}
+
+.text-wrapper {
+  color: #000000;
+  direction: rtl;
+  font-family: "Fredoka-Medium", Helvetica;
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: normal;
+  display: inline; /* Ensure the text is inline to flow naturally */
+  margin: 0; /* Adjust margin as needed */
+}
+
+.english {
+  font-family: "Arial Rounded MT Bold-Regular", Helvetica;
+}
+
+.nav-link:hover .text-wrapper{
+  color: #f88055 !important;
+  /* text-decoration: underline; */
+}
+
+.nav-link:hover .icon {
+  fill: #f88055 !important; 
+}
+
+.icon:hover {
+  fill: #f88055;
+}
+
+.icon {
+  fill: black;
+  cursor: pointer;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -5px; /* Adjust to position the underline below the text */
+  left: 0;
+  width: 100%; /* Full width */
+  height: 2px; /* Thickness of the underline */
+  background-color: #f88055; /* Color of the underline */
+  transform: scaleX(0); /* Start with scale 0 */
+  transform-origin: right; /* Scale from right */
+  transition: transform 0.3s ease; /* Animate the transform property */
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1); /* Scale to full size on hover */
+}
+
+.nav-link a {
+  text-decoration: none; 
+}
+
+
+
+
+    

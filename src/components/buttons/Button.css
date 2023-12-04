@@ -1,0 +1,32 @@
+.button{
+    all: unset;
+    align-items: flex-start;
+    background-color: #f88055;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px #00000040;
+    box-sizing: border-box;
+    display: inline-flex;
+    gap: 10px;
+    overflow: hidden;
+    padding: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.button .text-wrapper {
+    color: #ffffff;
+    direction: rtl;
+    font-family: "Fredoka-Bold", Helvetica;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1px;
+    position: relative;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.button:hover {
+    background-color: #ff5f25;
+}
