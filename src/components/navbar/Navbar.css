@@ -2,8 +2,13 @@
   and (max-width: 768px) {
   
   .navbar {
-    gap: 250px !important; 
     width: 92% !important;
+  }
+
+  .hamburger {
+    position: fixed;
+    left: 10px;
+    top: 18px;
   }
 
   .navbar .logo{
