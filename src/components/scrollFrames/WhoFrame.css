@@ -1,0 +1,76 @@
+.who {
+    align-items: center;
+    background-color: rgba(248, 128, 85, 0.8);
+    display: flex;
+    height: 435px;
+    overflow: hidden;
+    justify-content: center;
+    padding: 100px 0px;
+    position: relative;
+    width: 100%;
+}
+
+.who .who-text {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 500px;
+    padding: 10px;
+    position: relative;
+    width: 50%;
+}
+
+.who .div {
+    color: #ffffff;
+    direction: rtl;
+    font-family: "Fredoka-Medium", Helvetica;
+    font-size: 64px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1px;
+    position: relative;
+    text-shadow: 0px 4px 4px #00000040;
+    width: 40%;
+}
+
+.who .levelup-kw-israel {
+    color: #000000;
+    direction: rtl;
+    font-family: "Fredoka-Medium", Helvetica;
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-left: -6px;
+    margin-right: -6px;
+    position: relative;
+    width: fit-content;
+}
+
+.who .button-contrast-instance {
+    flex: 0 0 auto !important;
+}
+
+.who .frame-2{
+    height: 500px;
+    position: relative;
+    width: 60%;
+}
+
+.button-contrast-instance {
+    background-color: white !important;
+}
+
+.button-contrast-instance .text-wrapper{
+    color: #f88055 !important;
+}
+
+.button-contrast-instance:hover{
+    background-color: #ffebe3 !important;
+}
+
+.button-contrast-instance:hover .text-wrapper{
+    color: #fe642c !important;
+}

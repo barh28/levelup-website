@@ -27,7 +27,7 @@
     height: 50px;
     justify-content: flex-end;
     padding: 11px 21px;
-    position: relative;
+    position: fixed;
     width: 97%;
     z-index: 100;
 }

@@ -1,0 +1,47 @@
+/* Accessibility icon */
+.accessibility-instance {
+    left: 1380px; /* Original position */
+    top: 120px;
+    position: fixed;
+    transition: left 0.3s ease; /* Smooth transition for movement */
+    z-index: 4 !important; /* Ensure it's above or below other elements as needed */
+}
+
+/* Position when menu is open */
+.accessibility-instance.menu-open {
+    left: calc(1380px - 140px); /* Adjust based on the width of your menu */
+}
+
+
+/* Ensure that the button and menu transition smoothly */
+.accessibility-instance {
+    transition: transform 0.3s ease;
+}
+
+/* Adjust the transform when the menu is open to move the button and show the menu */
+.accessibility-instance.menu-open {
+    transform: translateX(-140px); /* Adjust this value to match your menu's width */
+}
+
+/* Initially, the menu is off the screen to the right */
+.accessibility-menu {
+    transition: transform 0.3s ease;
+    transform: translateX(100%);
+    position: absolute;
+    width: 200px; 
+}
+
+/* When the menu is open, reset the transform to bring it into view */
+.menu-open .accessibility-menu-wrap {
+    transform: translateX(70%);
+}
+
+.menu-open .accessibility-menu {
+    right: 41px;
+    top: -60px;
+}
+
+.menu-closed .accessibility-menu{
+    right: -3px !important;
+    top: 0px;
+}

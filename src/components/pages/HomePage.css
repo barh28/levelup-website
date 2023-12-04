@@ -1,0 +1,5 @@
+.main {
+    background-image: url("../../Images/buildings.jpg");
+    background-size: cover;
+    background-attachment: fixed; /* This will fix the background in place */
+}

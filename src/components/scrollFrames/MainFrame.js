@@ -1,16 +1,9 @@
-import React , {useState} from "react";
-import Accessibility from "../accessibility/Accessibility";
-import AccessibilityMenu from "../accessibility/AccessibilityMenu";
+import React from "react";
 import Button from "../buttons/Button";
 import DotIcon from "../../icons/DotIcom";
 import "./MainFrame.css"
 
 function MainFrame(){
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-    const toggleMenu = () => {
-        setIsMenuOpen(!isMenuOpen);
-    };
 
     return (
         <div className="main-frame">
@@ -29,12 +22,6 @@ function MainFrame(){
             {/* <Who className="who-instance"/> */}
             {/* <ClientsTell className="clients-tell-instance"/> */}
             {/* <Talk className="talk-instance"/> */}
-            <div className={`accessibility-instance ${isMenuOpen ? 'menu-open' : ''}`} onClick={toggleMenu}>
-            <Accessibility className="accessibility"/>
-            <div className={`accessibility-menu-wrap ${isMenuOpen ? 'menu-open' : 'menu-closed'}`}>
-                <AccessibilityMenu/>
-            </div>
-            </div>
         </div>
     )
 }
