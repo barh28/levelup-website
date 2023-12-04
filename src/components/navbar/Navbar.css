@@ -3,6 +3,7 @@
   
   .navbar {
     gap: 250px !important; 
+    width: 92% !important;
   }
 
   .navbar .logo{
