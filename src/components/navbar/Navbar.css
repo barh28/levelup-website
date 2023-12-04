@@ -1,3 +1,17 @@
+@media only screen 
+  and (max-width: 768px) {
+  
+  .navbar {
+    gap: 250px !important; 
+  }
+
+  .navbar .logo{
+    height: 50px !important;
+    width: 100px !important;
+  }
+
+}
+
 .navbar {
     align-items: center;
     background-color: #f6f6f6;
@@ -10,7 +24,7 @@
     position: relative;
     width: 97%;
     z-index: 100;
-  }
+}
   
   .navbar .icons-container {
     align-items: center;
