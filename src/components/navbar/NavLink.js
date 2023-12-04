@@ -1,5 +1,5 @@
 // NavLink.js
-import React, { useState } from "react";
+import React from "react";
 import "./NavLink.css";
 import DropdownArrowIcon from "../../icons/DropdownArrow";
 import { NavOptionslist } from "./NavOptionsList";
