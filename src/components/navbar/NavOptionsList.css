@@ -12,9 +12,8 @@
   position: absolute; /* Positioned absolutely to the nav-link */
   top: 100%; /* Positioned right below the nav-link */
   left: 0; /* Align it to the left edge of the nav-link */
-  right: 5px;
   z-index: 1000; /* Ensures it's on top of other content */
-  width: 200px; /* Width can be adjusted as needed */
+  width: 12.2vw; /* Width can be adjusted as needed */
 }
 
 .nav-link.active .nav-optionslist {
@@ -28,7 +27,7 @@
   height: 68px;
   justify-content: center;
   padding: 10px;
-  width: 100%; /* Width can be adjusted as needed */
+  /* width: 100%; Width can be adjusted as needed */
 }
 
 /* The negative margins in .OptionsList-instance may not be necessary unless you have a specific reason for them. */

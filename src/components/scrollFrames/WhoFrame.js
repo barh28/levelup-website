@@ -1,8 +1,22 @@
 import React from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 import Button from "../buttons/Button";
-import "./WhoFrame.css"
+import "./WhoFrame.css";
+import logo from "../../Images/logo.png"
 
 function WhoFrame(){
+
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+    };
+
     return (
         <div className="who">
             <div className="who-text">
@@ -29,6 +43,10 @@ function WhoFrame(){
                 <Button className="button-contrast-instance" text="ליצירת קשר"/>
             </div>
             <div className="frame-beside">
+            <Slider {...settings}>
+                    <img src={logo} alt="building" className="slide"/>
+                    <div>Your Component Here</div> 
+                </Slider>
             </div>
         </div>
     )
