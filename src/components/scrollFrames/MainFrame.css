@@ -1,16 +1,16 @@
 .main-frame {
     background-image: url("../../Images/homePhoto.jpg");
-    background-position: 50% 50%;
+    /* background-position: 100% 100%; */
     background-size: cover;
-    height: 707px;
+    height: 100vh;
     overflow: hidden;
-    position: relative;
-    width: 100%;
+    /* position: relative; */
+    width: 100vw;
 }
 
 .main-frame .div-2{
     align-items: center;
-    left: 1060px;
+    right: 10px;
     padding: 30px 10px;
     margin-top: 70px;
     position: absolute;
@@ -21,8 +21,9 @@
 .main-frame .div-3{
     align-items: center;
     display: flex;
-    gap: 8px;
-    height: 70px;
+    gap: 5px;
+    letter-spacing: 0;
+    height: 15vh;
     padding: 10px;
     position: relative;
     width: 340px;
@@ -32,7 +33,7 @@
     color: #000000;
     direction: rtl;
     font-family: "Arimo hebrew Subset-Regular", Helvetica;
-    font-size: 25px;
+    font-size: 2vw;
     font-weight: 400;
     line-height: normal;
     margin-bottom: -1.5px;
@@ -51,7 +52,7 @@
 .main-frame .text-wrapper-7{
     color: #000000;
     font-family: "Arial Rounded MT Bold-Regular";
-    font-size: 72px;
+    font-size: 5vw;
     font-weight: 400;
     letter-spacing: 0;
     line-height: normal;
@@ -59,7 +60,7 @@
     text-align: right;
     white-space: nowrap;
     width: fit-content;
-    margin-left: 6px;
+    margin-left: 1vw;
 }
 
 .main-frame .text-wrapper-8 {
