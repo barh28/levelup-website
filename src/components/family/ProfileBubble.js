@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from 'react';
+import React, { useRef, useEffect, useState , useCallback} from 'react';
 import './ProfileBubble.css';
 
 function ProfileBubble({ photo, text, direction }) {
@@ -6,7 +6,7 @@ function ProfileBubble({ photo, text, direction }) {
     const [visibility, setVisibility] = useState(0);
     const [hasBecomeFullyVisible, setHasBecomeFullyVisible] = useState(false);
 
-    function calculateVisibility() {
+    const calculateVisibility = useCallback(() => {
         if (!bubbleRef.current) return;
     
         const rect = bubbleRef.current.getBoundingClientRect();
@@ -29,7 +29,7 @@ function ProfileBubble({ photo, text, direction }) {
             setVisibility(0);
             setHasBecomeFullyVisible(false);
         }
-    }
+    })
     
 
     useEffect(() => {
