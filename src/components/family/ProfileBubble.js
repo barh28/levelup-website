@@ -38,7 +38,7 @@ function ProfileBubble({ photo, text, direction }) {
         return () => {
             window.removeEventListener('scroll', calculateVisibility);
         };
-    }, []);
+    }, [] );
 
     return (
         <div ref={bubbleRef} className={`profile-bubble ${direction === 'left' ? 'end-left' : 'end-right'}`} style={{ 
