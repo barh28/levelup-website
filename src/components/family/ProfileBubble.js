@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState , useCallback} from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import './ProfileBubble.css';
 
 function ProfileBubble({ photo, text, direction }) {
@@ -6,7 +6,7 @@ function ProfileBubble({ photo, text, direction }) {
     const [visibility, setVisibility] = useState(0);
     const [hasBecomeFullyVisible, setHasBecomeFullyVisible] = useState(false);
 
-    const calculateVisibility = useCallback(() => {
+    function calculateVisibility() {
         if (!bubbleRef.current) return;
     
         const rect = bubbleRef.current.getBoundingClientRect();
@@ -29,7 +29,7 @@ function ProfileBubble({ photo, text, direction }) {
             setVisibility(0);
             setHasBecomeFullyVisible(false);
         }
-    }, [hasBecomeFullyVisible]);
+    }
     
 
     useEffect(() => {
@@ -38,7 +38,7 @@ function ProfileBubble({ photo, text, direction }) {
         return () => {
             window.removeEventListener('scroll', calculateVisibility);
         };
-    }, [calculateVisibility] );
+    }, []);
 
     return (
         <div ref={bubbleRef} className={`profile-bubble ${direction === 'left' ? 'end-left' : 'end-right'}`} style={{ 
