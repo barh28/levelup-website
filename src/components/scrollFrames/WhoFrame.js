@@ -4,7 +4,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Button from "../buttons/Button";
 import "./WhoFrame.css";
-import logo from "../../Images/logo.png"
 
 function WhoFrame(){
 
@@ -44,7 +43,7 @@ function WhoFrame(){
             </div>
             <div className="frame-beside">
             <Slider {...settings}>
-                    <img src={logo} alt="building" className="slide"/>
+                    <img src="/Images/buildings.jpg" alt="building" className="slide"/>
                     <div>Your Component Here</div> 
                 </Slider>
             </div>

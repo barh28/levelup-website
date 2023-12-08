@@ -1,9 +1,9 @@
-.nav-link {
+.nav-link , .user{
   position: relative; /* This ensures the dropdown is positioned relative to the nav-link */
   /* Other styles... */
 }
 
-.nav-optionslist {
+.active .nav-optionslist , .nav-optionslist{
   align-items: center;
   background-color: #f6f6f6;
   box-shadow: 0px 4px 4px #00000040;
@@ -16,8 +16,17 @@
   width: 12.2vw; /* Width can be adjusted as needed */
 }
 
-.nav-link.active .nav-optionslist {
-  display: flex; /* Show when the nav-link is active */
+.active .nav-optionslist , .active-user .nav-optionslist{
+  display: flex; 
+  cursor: pointer;
+}
+
+.active-user .nav-optionslist {
+  width: 9vw !important;
+}
+
+.active-user .OptionsList{
+  width: 8vw;
 }
 
 .nav-optionslist .frame {

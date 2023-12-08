@@ -7,14 +7,14 @@
     justify-content: center;
     padding: 10px;
     position: relative;
-    width: 11vw;
+    width: 155px;
   }
   
   .OptionsList .text-wrapper-list {
     color: #000000;
     direction: rtl;
     font-family: "Fredoka-Medium", Helvetica;
-    font-size: 1.2vw;
+    font-size: 16px;
     font-weight: 700;
     letter-spacing: 0;
     line-height: normal;

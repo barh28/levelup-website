@@ -1,0 +1,14 @@
+.famframe {
+    height: 65vh;
+    width: 100vw;
+}
+
+.famframe img {
+    width: 50%;
+    height: 50%;
+}
+
+.fame-agent {
+    transition: transform 0.5s ease-out;
+}
+

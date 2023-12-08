@@ -1,5 +1,18 @@
+@media only screen and (max-width: 768px){
+    .main-frame .div-2 {
+        right: 0; /* Closer to the edge for smaller screens */
+        width: 24vw !important; /* Larger relative width for visibility on small screens */
+        top: 15px !important;
+        /* Other styles... */
+    }
+
+    .main-frame .text-wrapper-8 {
+        margin-left: 1vw !important;
+    }
+}
+
 .main-frame {
-    background-image: url("../../Images/homePhoto.jpg");
+    background-image: url("../../../public/Images/homePhoto.jpg");
     /* background-position: 100% 100%; */
     background-size: cover;
     height: 100vh;
@@ -45,7 +58,7 @@
 .main-frame .icon-dot{
     height: 10px !important;
     position: relative;
-    width: 16px;
+    width: 3vw;
 }
 
 .main-frame .text-wrapper-7{
@@ -66,7 +79,7 @@
     color: #000000;
     direction: rtl;
     font-family: "Arimo Hebrew Subset-Regular";
-    font-size: 30px;
+    font-size: 2.5vw;
     font-weight: 400;
     letter-spacing: 0;
     line-height: normal;
@@ -82,12 +95,12 @@
     align-items: center !important;
     display: flex !important;
     justify-content: center !important;
-    margin-left: 65px !important;
-    width: 150px ;
+    margin-left: 5vw !important;
+    width: fit-content ;
     height: 40px;
 }
 
 .main-frame .button .text-wrapper{
-    font-size: 25px;
+    font-size: 2vw;
 }
 

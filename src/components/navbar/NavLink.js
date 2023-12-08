@@ -5,7 +5,7 @@ import DropdownArrowIcon from "../../icons/DropdownArrow";
 import { NavOptionslist } from "./NavOptionsList";
 import { Link } from 'react-router-dom';
 
-export const NavLink = ({ text, textEn, dropdown , path, setDropDownOpen, dropDownOpen}) => {
+export const NavLink = ({ text, textEn, dropdown , path, setDropDownOpen, dropDownOpen, type}) => {
   // const [isOpen, setIsOpen] = useState(false); // State to manage dropdown visibility
 
   const toggleDropdown = (e) => {
@@ -32,7 +32,7 @@ export const NavLink = ({ text, textEn, dropdown , path, setDropDownOpen, dropDo
         // If it's not a dropdown, use the Link component
         <Link to={path}>{linkContent}</Link>
       )}
-      {dropdown && dropDownOpen && <NavOptionslist />}
+      {dropdown && dropDownOpen && <NavOptionslist/>}
     </div>
   );
 };

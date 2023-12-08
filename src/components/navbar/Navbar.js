@@ -5,7 +5,6 @@ import UserIcon from "../../icons/User";
 import WhatsappIcon from "../../icons/Whatsapp";
 import FacbookIcon from "../../icons/Facebook";
 import LocationIcon from "../../icons/Location";
-import Logo from '../../Images/logo.png';
 import { Link } from "react-router-dom";
 import { useLocation } from 'react-router-dom';
 import Hamburger from "./Hamburger";
@@ -42,13 +41,14 @@ export const Navbar = ({ className }) => {
         <NavLink className="nav-link-instance" divClassName="design-component-instance-node" text="השירותים שלנו" dropdown={true} dropDownOpen={dropDownOpen} setDropDownOpen={setDropDownOpen} path="/"/>
         <NavLink className="nav-link-2" divClassName="nav-link-3" text="דרושים" path="/jobs"/>
         <NavLink text="קצת עלינו" path="aboutUs"/>
+        <NavLink text="מציאות" path="finds"/>
       </div>}
       {isMobile && <Hamburger/>}
       <div className="logo-containter">
         <UserIcon/>
         <div className="line" />
         <Link to="/">
-        <img className="logo" alt="LevelUp" src={Logo} />
+        <img className="logo" alt="LevelUp" src="/Images/logo.png" />
         </Link>
       </div>
     </div>
