@@ -29,7 +29,7 @@ function ProfileBubble({ photo, text, direction }) {
             setVisibility(0);
             setHasBecomeFullyVisible(false);
         }
-    }, [calculateVisibility]);
+    }, [hasBecomeFullyVisible]);
     
 
     useEffect(() => {
