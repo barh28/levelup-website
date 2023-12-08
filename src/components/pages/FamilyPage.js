@@ -1,6 +1,5 @@
 import React from "react";
 import "./FamilyPage.css"
-import FamilyFrame from "../scrollFrames/FamilyFrame";
 import MainFrame from "../scrollFrames/MainFrame";
 import ProfileBubble from "../family/ProfileBubble";
 

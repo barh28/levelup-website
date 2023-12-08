@@ -61,7 +61,7 @@ function FamilyFrame() {
         <div ref={frameRef} className="fam-agent" style={{ 
             transform: `translateX(${(1 - visibility) * 100}%)` 
         }}>
-            <img src="/Images/logo.png"></img>
+            <img src="/Images/logo.png" alt="logo"></img>
         </div>
         </div>
     );
