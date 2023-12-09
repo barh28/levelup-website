@@ -5,7 +5,7 @@ import AccessibilityIcon from "../../icons/AccessibilityIcon";
 function Accessibility(){
     return (
         <div className="accessibility">
-            <AccessibilityIcon className="icon-accessibility"/>
+            <AccessibilityIcon className="accessibility"/>
         </div>
     )
 }

@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState } from 'react';
 import './ProfileBubble.css';
 
-function ProfileBubble({ photo, text, direction }) {
+function ProfileBubble({ photo,name, text, direction }) {
     const bubbleRef = useRef(null);
     const [visibility, setVisibility] = useState(0);
     const [hasBecomeFullyVisible, setHasBecomeFullyVisible] = useState(false);
@@ -40,16 +40,25 @@ function ProfileBubble({ photo, text, direction }) {
         };
     }, []);
 
+    const textDiv = <div className='text-bubble'>
+        <div className='profile-text-name'>
+            {name}
+        </div>
+        <div className='profile-text'>
+            {text}
+        </div>
+    </div>
+
     return (
-        <div ref={bubbleRef} className={`profile-bubble ${direction === 'left' ? 'end-left' : 'end-right'}`} style={{ 
+        <div ref={bubbleRef} className={`profile-bubble ${direction}`} style={{ 
             transform: `translateX(${direction === 'left' ? -10 + (1 - visibility) * -30 : 10 + (1 - visibility) * 30}%)`
         }}>
             {direction === "left" ? <>
             <img src={photo} alt="Profile" className="profile-photo"/>
-            <div className="profile-text">{text}</div> 
+            {textDiv}
             </> :
             <>
-            <div className="profile-text">{text}</div>
+            {textDiv}
             <img src={photo} alt="Profile" className="profile-photo"/>
             </>}
         </div>

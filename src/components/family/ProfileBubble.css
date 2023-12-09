@@ -24,64 +24,62 @@
 .profile-bubble {
     display: flex;
     align-items: center;
+    overflow: hidden;
     justify-content: center;
     transition: transform 0.5s ease-out;
     will-change: transform;
 }
 
 .profile-bubble .profile-photo {
-    width: 35vw;
-    height: 90vh;
+    padding-top: 6px;
+}
+
+.profile-bubble .profile-text-name {
+    font-family: 'Fredoka-Medium';
+    font-size: 30px;
+    direction: rtl;
+    color: white;
 }
 
 .profile-bubble .profile-text {
-    font-family: 'Fredoka-Bold';
-    font-size: 30px;
+    font-family: 'Fredoka-Medium';
+    font-size: 15px;
+    direction: rtl;
+    color: white;
 }
 
-/* End position for left direction */
-/* .profile-bubble.end-left {
-    transform: translateX(-10%) !important; 
-} */
-
-/* End position for right direction */
-/* .profile-bubble.end-right {
-    transform: translateX(10%) !important; 
-} */
-
-/* Styles for when the component is visible */
-/* .profile-bubble.visible.left {
-    animation: slideFromLeft 1s ease forwards;
-} */
-
-/* .profile-bubble.visible.right {
-    animation: slideFromRight 1s ease forwards;
-} */
-
-/* Styles for when the component is not visible */
-/* .profile-bubble.hidden.left {
-    transform: translateX(-100%);
-    opacity: 0;
-} */
-
-/* .profile-bubble.hidden.right {
-    transform: translateX(100%);
-    opacity: 0;
-} */
-
-
-/* .profile-bubble.left {
-    animation: slideFromLeft 1s ease forwards;
+.profile-bubble .text-bubble {
+    position: relative;
+    background-color: #f88055;
+    border-radius: 18px;
+    padding: 10px 15px;
+    margin: 20px; /* Adjust as needed */
+    max-width: 200px;
+    word-wrap: break-word;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
-.profile-bubble.right {
-    animation: slideFromRight 1s ease forwards;
+/* Pseudo-element for the tail */
+.profile-bubble .text-bubble::after {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    width: 20px; /* Tail width */
+    height: 20px; /* Tail height */
+    background: #f88055;
+    border-radius: 50%; 
 }
 
-.profile-bubble.animate.left {
-    animation: slideFromLeft 1s ease forwards;
+.profile-bubble.right .text-bubble::after{
+    right: -10px; 
+    transform: translate(-50%, 50%) rotate(-45deg);
+    box-shadow: -2px 2px 3px rgba(0, 0, 0, 0.2);
+    clip-path: polygon(0% 0%, 0% 100%, 100% 0);
 }
 
-.profile-bubble.animate.right {
-    animation: slideFromRight 1s ease forwards;
-} */
+.profile-bubble.left .text-bubble::after {
+    left: -10px; 
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+    transform: translate(50%,50%) rotate(45deg);
+    clip-path: polygon(0% 0%, 100% 100%, 100% 0%);
+}

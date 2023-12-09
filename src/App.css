@@ -9,6 +9,11 @@
 }
 
 @font-face {
+  font-family: 'Fredoka-Regular';
+  src: url("./Fonts/Fredoka/static/Fredoka-Regular.ttf") format('truetype');
+}
+
+@font-face {
   font-family: 'Fredoka-Bold';
   src: url("./Fonts/Fredoka/static/Fredoka-Bold.ttf") format('truetype');
 }

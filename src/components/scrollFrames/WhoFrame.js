@@ -17,7 +17,7 @@ function WhoFrame(){
     };
 
     return (
-        <div className="who">
+        <div className="who orange-color" data-color="#f88055">
             <div className="who-text">
                 <div className="div">
                     מי אנחנו?

@@ -39,7 +39,7 @@ export const Navbar = ({ className }) => {
         <NavLink className="nav-link-instance" divClassName="design-component-instance-node" text="צרו קשר" path="/contact"/>
         <NavLink className="nav-link-instance" divClassName="design-component-instance-node" text="משפחת" textEn="LevelUP" path="/ourFamily"/>
         <NavLink className="nav-link-instance" divClassName="design-component-instance-node" text="השירותים שלנו" dropdown={true} dropDownOpen={dropDownOpen} setDropDownOpen={setDropDownOpen} path="/"/>
-        <NavLink className="nav-link-2" divClassName="nav-link-3" text="דרושים" path="/jobs"/>
+        {/* <NavLink className="nav-link-2" divClassName="nav-link-3" text="דרושים" path="/jobs"/> */}
         <NavLink text="קצת עלינו" path="aboutUs"/>
         <NavLink text="מציאות" path="finds"/>
       </div>}

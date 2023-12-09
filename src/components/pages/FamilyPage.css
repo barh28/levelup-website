@@ -1,3 +1,4 @@
 .family-page-frame {
-    background-color: #f88055;
+    background-color: rgb(242, 242, 242);
+    overflow-x: hidden;
 }
