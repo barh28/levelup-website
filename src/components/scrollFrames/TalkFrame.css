@@ -1,0 +1,139 @@
+.talk {
+    align-items: center;
+    background-color: rgba(248, 128, 85, 0.8);
+    display: flex;
+    flex-direction: column;
+    /* gap: 20px; */
+    height: 90vh;
+    width: 100vw;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.talk .talk-frame {
+    align-items: center;
+    border: 1px solid;
+    border-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    /* gap: 20px; */
+    height: 50vh;
+    width: 90vw;
+    margin-left: -0.5px;
+    margin-right: -0.5px;
+    padding: 80px 10px;
+    position: relative;
+}
+
+.talk .text-wrapper-talk{
+    color: #ffffff;
+    direction: rtl;
+    font-family: "Fredoka-Bold";
+    font-size: 5vw;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1px;
+    position: relative;
+    text-shadow: 0px 4px 4px #00000040;
+    width: fit-content;
+}
+
+.talk .p-div{
+    color: #ffffff;
+    direction: rtl;
+    font-family: "Fredoka-Medium";
+    font-size: 3vw;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: normal;
+    position: relative;
+    text-shadow: 0px 4px 4px #00000040;
+    width: fit-content;
+}
+
+.talk .talk-frame-down {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 512px;
+    justify-content: center;
+    margin-bottom: -31px;
+    margin-left: -6.5px;
+    margin-right: -6.5px;
+    overflow: hidden;
+    padding: 10px;
+    position: relative;
+    width: 80vw;
+}
+
+.talk .img {
+    height: 90px;
+    position: relative;
+    width: 70vw;
+}
+
+.talk .img-address{
+    padding-left: 0px;
+}
+
+.talk .inner-icons {
+    align-items: flex-start;
+    display: flex;
+    gap: 6.5vw;
+    justify-content: flex-end;
+    margin-left: 1vw;
+    padding-right: 3vw;
+    position: relative;
+    width: 75vw;
+}
+
+.talk .inner {
+    align-items: flex-start;
+    display: flex;
+    gap: 9.3vw;
+    /* height: 222px; */
+    justify-content: flex-end;
+    margin-left: 7vw;
+    padding-right: 14vw;
+    position: relative;
+    width: 70vw;
+}
+
+.talk .address{
+    color: #ffffff;
+    direction: rtl;
+    font-family: "Fredoka-Medium";
+    font-size: 2vw;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-left: -62px;
+    margin-top: -1px;
+    position: relative;
+    text-align: center;
+    text-shadow: 0px 4px 4px #00000040;
+    width: fit-content;
+}
+
+.talk .mail , .talk .phone{
+    color: #ffffff;
+    direction: rtl;
+    font-family: "Fredoka-Medium";
+    font-size: 2vw;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1px;
+    position: relative;
+    text-align: center;
+    text-shadow: 0px 4px 4px #00000040;
+    width: fit-content;
+}
+
+.talk .mail {
+    font-family: "Arial Rounded MT Bold-Regular";
+}

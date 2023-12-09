@@ -35,7 +35,8 @@
 }
 
 .who .levelup-kw-israel {
-    color: #000000;
+    color: #ffffff;
+    text-shadow: 0px 4px 4px #00000040;
     direction: rtl;
     font-family: "Fredoka-Medium", Helvetica;
     font-size: 22px;

@@ -28,10 +28,14 @@
     justify-content: center;
     transition: transform 0.5s ease-out;
     will-change: transform;
+    position: relative;
+    z-index: 1;
 }
 
 .profile-bubble .profile-photo {
     padding-top: 6px;
+    position: relative;
+    z-index: 1;
 }
 
 .profile-bubble .profile-text-name {

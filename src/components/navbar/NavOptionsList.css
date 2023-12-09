@@ -13,7 +13,7 @@
   top: 100%; /* Positioned right below the nav-link */
   left: 0; /* Align it to the left edge of the nav-link */
   z-index: 1000; /* Ensures it's on top of other content */
-  width: 12.2vw; /* Width can be adjusted as needed */
+  width: 170px; /* Width can be adjusted as needed */
 }
 
 .active .nav-optionslist , .active-user .nav-optionslist{
@@ -22,7 +22,7 @@
 }
 
 .active-user .nav-optionslist {
-  width: 9vw !important;
+  width: 130px;
 }
 
 .active-user .OptionsList{

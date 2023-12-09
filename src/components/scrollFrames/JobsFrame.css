@@ -1,4 +1,4 @@
-.family-frame {
+.jobs-frame {
     display: flex; /* Use display: flex to create a flex container */
     align-items: center; /* Centers items vertically */
     justify-content: center; /* Centers items horizontally */
@@ -21,13 +21,7 @@
 .text-topic p {
     display: inline; 
     margin: 0;
-    font-family: 'Arial Rounded MT Bold-Regular';
-}
-
-.text p {
-    display: inline;
-    margin: 0;
-    font-family: "Arial Rounded MT Bold-Regular";
+    font-family: 'Fredoka-Bold';
 }
 
 .text {
@@ -62,6 +56,8 @@
 
 .button-contrast-instance:hover{
     background-color: #ffebe3 !important;
+    box-shadow: 0px 4px 4px #00000040;
+    ;
 }
 
 .button-contrast-instance:hover .text-wrapper{

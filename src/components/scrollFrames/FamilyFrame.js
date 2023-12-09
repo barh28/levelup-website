@@ -7,13 +7,12 @@ function FamilyFrame(){
         <>
         <div className="family-frame orange-color" data-color="#f88055">
             <div className="wrap-all">
-                <div className="text-topic">אנחנו מחפשים <p>אותך</p>!</div>
-                <div className="text">אנחנו מתרחבים ומחפשים סוכנים חדשים, כאלו שרעבים להצלחה, 
-                חרוצים ובעלי מוסר עבודה גבוה מלאים בשמחת חיים שיצטרפו למשפחה שלנו!
-                אנו נדאג להכשרה ומעטפת מקצועית , כל מה שנשאר לך לעשות זה לקום בבוקר ולהגיע
-                אם את/ה חושב/ת שאת/ה מתאימ/ה
+                <div className="text-topic">משפחת <p>LevelUP</p></div>
+                <div className="text">המשפחה שלנו כוללת סוכנים ובעלי מקצוע מנוסים, יועצי משכנתאות
+                מלווי משקיעים, מנהלת אדמיניסטרטיבית ומתמחים בהשבחת נכסים
+                המשרד הינו זכיין של הרשת הבינלאומית <p>KW</p> ובשיתוף הרשת אנו מלווים את הסוכנים שלנו בדרך להצלחתם
                 </div>
-                <Button className="button-contrast-instance" text="בוא/י לעבוד איתנו!"/>
+                <Button className="button-contrast-instance" text="רוצים לעבוד איתנו?"/>
             </div>
         </div>
         </>

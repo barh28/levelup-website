@@ -1,0 +1,23 @@
+.clients-frame {
+    display: flex; /* Use display: flex to create a flex container */
+    align-items: flex-start; /* Centers items vertically */
+    justify-content: center; /* Centers items horizontally */
+    background-color: #f6f6f6;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.text-wrapper-client{
+    color: #f88055;
+    direction: rtl;
+    font-family: "Fredoka-Bold";
+    font-size: 5vw;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: 15px;
+    position: relative;
+    text-shadow: 0px 4px 4px #00000040;
+    width: fit-content;
+}
