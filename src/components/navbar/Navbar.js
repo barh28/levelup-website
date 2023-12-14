@@ -15,6 +15,7 @@ export const Navbar = ({ className }) => {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
 
   useEffect(()=>{
+    window.scrollTo(0, 0);
     setDropDownOpen(false);
   }, [location])
 
