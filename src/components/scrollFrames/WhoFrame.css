@@ -54,15 +54,14 @@
 }
 
 .who .frame-beside {
+    width: 70%; /* Adjust to 50% of its parent's width */
     height: 500px;
-    position: relative;
-    width: 50vw;
-    display: flex;        /* Flexbox to help with centering */
-    justify-content: center; /* Center horizontally */
-    align-items: center;  /* Center vertically */
-    overflow: hidden;    /* Hide overflow */
-    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
+
 
 .button-contrast-instance {
     background-color: white !important;
@@ -80,7 +79,16 @@
     color: #fe642c !important;
 }
 
-.slide img{
-    width: 5vw;
-    height: 5vh;
+.custom-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+    /* Add any other styling you need */
 }
+
+.slider-container {
+    width: 90%;
+}
+  
+  

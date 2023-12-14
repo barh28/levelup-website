@@ -6,6 +6,7 @@ import AccessibilityAnimation from './components/accessibility/AccessibilityAnim
 import FamilyPage from './components/pages/FamilyPage';
 import JobsPage from './components/pages/JobsPage';
 import Footer from './components/Footer/Footer';
+import FindsPage from './components/pages/FindsPage';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
                 <Route path="/" element={<HomePage />} />
                 <Route path="/ourFamily" element={<FamilyPage/>}/>
                 <Route path="/jobs" element={<JobsPage/>}/>
+                <Route path="/finds" element={<FindsPage/>}/>
             </Routes>
           </div>
         </Router>

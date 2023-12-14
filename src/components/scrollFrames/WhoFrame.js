@@ -1,9 +1,9 @@
 import React from "react";
-import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import Button from "../buttons/Button";
 import "./WhoFrame.css";
+import Carousel from 'nuka-carousel';
 
 function WhoFrame(){
 
@@ -42,10 +42,17 @@ function WhoFrame(){
                 <Button className="button-contrast-instance" text="ליצירת קשר"/>
             </div>
             <div className="frame-beside">
-            <Slider {...settings}>
-                    <img src="/Images/buildings.jpg" alt="building" className="slide"/>
-                    <div>Your Component Here</div> 
-                </Slider>
+                <Carousel>
+                <div className="custom-slide">
+                    <img src="/Images/family/zohar.jpg" alt="Slide 1" />
+                </div>
+                <div className="custom-slide">
+                    <img src="daniel.jpg" alt="Slide 2" />
+                </div>
+                <div className="custom-slide">
+                    <img src="pinchas.jpg" alt="Slide 3" />
+                </div>
+                </Carousel>
             </div>
         </div>
     )
