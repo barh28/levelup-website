@@ -11,13 +11,27 @@ import Hamburger from "./Hamburger";
 
 export const Navbar = ({ className }) => {
   const location = useLocation();
-  const [dropDownOpen, setDropDownOpen] = useState(false);
+  const [dropDownOpenService, setDropDownOpenService] = useState(false);
+  const [dropDownOpenUser, setDropDownOpenUser] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
 
   useEffect(()=>{
     window.scrollTo(0, 0);
-    setDropDownOpen(false);
-  }, [location])
+    setDropDownOpenService(false);
+    setDropDownOpenUser(false);
+  }, [location.pathname])
+
+  useEffect(()=>{
+    if(dropDownOpenService){
+      setDropDownOpenUser(false);
+    }
+  }, [dropDownOpenService])
+
+  useEffect(()=>{
+    if(dropDownOpenUser){
+      setDropDownOpenService(false);
+    }
+  }, [dropDownOpenUser])
 
   useEffect(() => {
     function handleResize() {
@@ -39,14 +53,14 @@ export const Navbar = ({ className }) => {
       {!isMobile && <div className="links-container">
         <NavLink className="nav-link-instance" divClassName="design-component-instance-node" text="צרו קשר" path="/contact"/>
         <NavLink className="nav-link-instance" divClassName="design-component-instance-node" text="משפחת" textEn="LevelUP" path="/ourFamily"/>
-        <NavLink className="nav-link-instance" divClassName="design-component-instance-node" text="השירותים שלנו" dropdown={true} dropDownOpen={dropDownOpen} setDropDownOpen={setDropDownOpen} path="/"/>
+        <NavLink className="nav-link-instance" divClassName="design-component-instance-node" text="השירותים שלנו" dropdown={true} dropDownOpen={dropDownOpenService} setDropDownOpen={setDropDownOpenService} path="/"/>
         <NavLink className="nav-link-2" divClassName="nav-link-3" text="דרושים" path="/jobs"/>
         <NavLink text="קצת עלינו" path="aboutUs"/>
         <NavLink text="מציאות" path="finds"/>
       </div>}
       {isMobile && <Hamburger/>}
       <div className="logo-containter">
-        <UserIcon/>
+        <UserIcon dropDown={dropDownOpenUser} setDropDown={setDropDownOpenUser}/>
         <div className="line" />
         <Link to="/">
         <img className="logo" alt="LevelUp" src="/Images/logo.png" />
