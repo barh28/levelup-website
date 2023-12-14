@@ -47,10 +47,10 @@ function WhoFrame(){
                     <img src="/Images/family/zohar.jpg" alt="Slide 1" />
                 </div>
                 <div className="custom-slide">
-                    <img src="daniel.jpg" alt="Slide 2" />
+                    <img src="/Images/family/daniel.jpg" alt="Slide 2" />
                 </div>
                 <div className="custom-slide">
-                    <img src="pinchas.jpg" alt="Slide 3" />
+                    <img src="/Images/family/pinchas.jpg" alt="Slide 3" />
                 </div>
                 </Carousel>
             </div>
