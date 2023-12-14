@@ -51,7 +51,7 @@ function ProfileBubble({ photo,name, text, direction }) {
 
     return (
         <div ref={bubbleRef} className={`profile-bubble ${direction}`} style={{ 
-            transform: `translateX(${direction === 'left' ? -10 + (1 - visibility) * -30 : 10 + (1 - visibility) * 30}%)`
+            transform: `translateX(${direction === 'left' ? -20 + (1 - visibility) * -30 : 20 + (1 - visibility) * 30}%)`
         }}>
             {direction === "left" ? <>
             <img src={photo} alt="Profile" className="profile-photo"/>
