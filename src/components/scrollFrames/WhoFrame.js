@@ -39,7 +39,7 @@ function WhoFrame(){
                     <br/>
                     לשיחת ייעוץ והכוונה, ללא כל התחייבות
                 </p>
-                <Button className="button-contrast-instance" text="ליצירת קשר"/>
+                <Button className="button-contrast-instance" text="ליצירת קשר" path="/contact"/>
             </div>
             <div className="frame-beside">
                 <Carousel>

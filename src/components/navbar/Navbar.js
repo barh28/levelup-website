@@ -16,7 +16,10 @@ export const Navbar = ({ className }) => {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
 
   useEffect(()=>{
-    window.scrollTo(0, 0);
+    console.log('Route changed to: ' + location.pathname);
+    setTimeout(() => {
+      window.scrollTo(0, 0);
+  }, 100);
     setDropDownOpenService(false);
     setDropDownOpenUser(false);
   }, [location.pathname])

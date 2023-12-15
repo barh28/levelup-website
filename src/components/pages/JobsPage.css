@@ -1,4 +1,6 @@
 .jobs-page-frame {
-    background-color: rgb(242, 242, 242);
+    background-image: url("../../../public/Images/buildings.jpg");
+    background-size: cover;
+    background-attachment: fixed;
     overflow-x: hidden;
 }

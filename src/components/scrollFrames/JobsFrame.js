@@ -1,6 +1,5 @@
 import React from "react";
 import "./JobsFrame.css"
-import Button from "../buttons/Button";
 
 function JobsFrame(){
     return (
@@ -13,7 +12,6 @@ function JobsFrame(){
                 אנו נדאג להכשרה ומעטפת מקצועית , כל מה שנשאר לך לעשות זה לקום בבוקר ולהגיע
                 אם את/ה חושב/ת שאת/ה מתאימ/ה
                 </div>
-                <Button className="button-contrast-instance" text="בוא/י לעבוד איתנו!"/>
             </div>
         </div>
         </>

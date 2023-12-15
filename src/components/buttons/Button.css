@@ -13,7 +13,7 @@
     cursor: pointer;
 }
 
-.button .text-wrapper {
+.button a .text-wrapper {
     color: #ffffff;
     direction: rtl;
     font-family: "Fredoka-Bold", Helvetica;
@@ -25,6 +25,11 @@
     position: relative;
     white-space: nowrap;
     width: fit-content;
+}
+
+a {
+    direction: rtl;
+    text-decoration: none !important; 
 }
 
 .button:hover {

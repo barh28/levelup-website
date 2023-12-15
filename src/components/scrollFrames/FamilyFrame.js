@@ -12,7 +12,7 @@ function FamilyFrame(){
                 מלווי משקיעים, מנהלת אדמיניסטרטיבית ומתמחים בהשבחת נכסים
                 המשרד הינו זכיין של הרשת הבינלאומית <p>KW</p> ובשיתוף הרשת אנו מלווים את הסוכנים שלנו בדרך להצלחתם
                 </div>
-                <Button className="button-contrast-instance" text="רוצים לעבוד איתנו?"/>
+                <Button className="button-contrast-instance" text="רוצים לעבוד איתנו?" path="/jobs"/>
             </div>
         </div>
         </>

@@ -1,0 +1,69 @@
+.soon-frame {
+    display: flex; /* Use display: flex to create a flex container */
+    align-items: center; /* Centers items vertically */
+    justify-content: center; /* Centers items horizontally */
+    background-image: url("../../../public/Images/buildingsOrange.jpg");
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.text-topic {
+    color: white;
+    padding: 2vw 2vw;
+    direction: rtl;
+    font-family: 'Fredoka-Medium';
+    font-size: 6vw;
+    white-space: nowrap;
+    text-shadow: 0px 4px 4px #00000040;
+}
+
+.text-topic p {
+    display: inline; 
+    margin: 0;
+    font-family: 'Arial Rounded MT Bold-Regular';
+}
+
+.text p {
+    display: inline;
+    margin: 0;
+    font-family: "Arial Rounded MT Bold-Regular";
+}
+
+.text {
+    padding-bottom: 2vw;
+    color: white;
+    /* width: 60vw; */
+    width: fit-content;
+    direction: rtl;
+    font-family: 'Fredoka-Medium';
+    font-size: 2vw;
+    text-shadow: 0px 4px 4px #00000040;
+}
+
+.wrap-all {
+    display: flex; /* Use display: flex to create a flex container */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Centers items horizontally within the .wrap-all container */
+    justify-content: center; /* Centers items vertically within the .wrap-all container */
+    position: relative;
+    margin: 20vh 15vw; /* Adjust the margin as necessary */
+    width: 100%; /* Ensures the wrapper takes the full width */
+    overflow: hidden;
+}
+
+/* .button-contrast-instance {
+    background-color: white !important;
+}
+
+.button-contrast-instance .text-wrapper{
+    color: #f88055 !important;
+}
+
+.button-contrast-instance:hover{
+    background-color: #ffebe3 !important;
+}
+
+.button-contrast-instance:hover .text-wrapper{
+    color: #fe642c !important;
+} */

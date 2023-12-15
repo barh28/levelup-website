@@ -1,5 +1,6 @@
 import React from "react";
 import { OptionsList } from "./OptionsList";
+import { Link } from "react-router-dom";
 import "./NavOptionsList.css";
 
 export const NavOptionslist = ({ className , type}) => {
@@ -8,24 +9,36 @@ export const NavOptionslist = ({ className , type}) => {
     <div className={`nav-optionslist ${className}`}>
       {type!=="client" && <>
         <div className="frame">
-        <OptionsList className="OptionsList-instance" text="קנית/מכירת נכסים" />
+          <Link to="/buy">
+            <OptionsList className="OptionsList-instance" text="קנית/מכירת נכסים" />
+          </Link>
       </div>
       <div className="frame">
-        <OptionsList className="OptionsList-instance" text="שיפוץ והשבחת נכסים" />
+          <Link to="/renovation">
+            <OptionsList className="OptionsList-instance" text="שיפוץ והשבחת נכסים" />
+          </Link>
       </div>
       <div className="frame">
-        <OptionsList className="OptionsList-instance" text="שכירויות" />
+          <Link to="rents">
+            <OptionsList className="OptionsList-instance" text="שכירויות" />
+          </Link>
       </div>
       <div className="frame">
-        <OptionsList className="OptionsList-instance" text="השקעות נדל״ן" />
+          <Link to="invests">
+            <OptionsList className="OptionsList-instance" text="השקעות נדל״ן" />
+          </Link>
       </div>
       </>}
       {type==="client" && <>
         <div className="frame">
-        <OptionsList className="OptionsList-instance" text="התחברות" />
+          <Link to="/login">
+            <OptionsList className="OptionsList-instance" text="התחברות" />
+          </Link>
         </div>
         <div className="frame">
-        <OptionsList className="OptionsList-instance" text="הרשמה" />
+          <Link to="register">
+            <OptionsList className="OptionsList-instance" text="הרשמה" />
+          </Link>
         </div>
       </>}
     </div>

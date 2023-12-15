@@ -17,7 +17,7 @@ function MainFrame(){
                 </div>
                 <div className="text-wrapper-7">LevelUP</div>
                 <div className="text-wrapper-8">יועצי הנדל״ן שלכם</div>
-                <Button className="button-instance" text="ליצירת קשר"></Button>
+                <Button className="button-instance" text="ליצירת קשר" path="/contact"></Button>
             </div>
             {/* <Who className="who-instance"/> */}
             {/* <ClientsTell className="clients-tell-instance"/> */}

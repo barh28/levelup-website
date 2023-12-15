@@ -1,10 +1,11 @@
 import React, { useEffect, useState , useRef} from "react";
-import "./ContactFrame.css"
+import "./JobsForm.css"
 
-function ContactFrame(){
+function JobsForm(){
     const userRef = useRef();
     const [fullName, setFullName] = useState('');
     const [phoneNumber, setPhoneNumber] = useState('');
+    const [email, setEmail] = useState('');
     const [selectedOption, setSelectedOption] = useState('');
     const [more, setMore] = useState("");
 
@@ -13,11 +14,11 @@ function ContactFrame(){
     }, [])
 
     return (
-        <div className="contact">
-            <div className="contant-wrapper">
-            <p>השאירו פרטים ונחזור אליכם בהקדם</p>
+        <div className="job">
+            <div className="job-wrapper">
+                <p>השאירו פרטים ונחזור אליכם בהקדם</p>
                 <div className="form">
-                    <form className="contact-form">
+                    <form className="job-form">
                         <label htmlFor="full-name">שם מלא:</label>
                         <input 
                             id="full-name" 
@@ -35,26 +36,33 @@ function ContactFrame(){
                             onChange={(e)=> setPhoneNumber(e.target.value)}
                             required
                         />
-                        <label htmlFor="subject">נושא הפנייה:</label>
+                        {/* <label htmlFor="mail">מייל:</label>
+                        <input
+                            id="mail"
+                            type="mail"
+                            value={email}
+                            onChange={(e)=> setEmail(e.target.value)}
+                            required
+                        /> */}
+                        <label htmlFor="subject">מחלקה:</label>
                         <select 
                             id="subject" 
                             value={selectedOption} 
                             onChange={(e) => setSelectedOption(e.target.value)}
-                            placeholder="בחר את נושא פנייתך"
                             required
                         >
                             <option value=""></option>
-                            <option value="מכירה">מכירה</option>
-                            <option value="קנייה">קנייה</option>
-                            <option value="שכירות">שכירות</option>
-                            <option value="עבודה">מעוניינ/ת לעבוד אצלכם</option>
+                            <option value="ליווי ויעוץ נדל״ן">ליווי ויעוץ נדל״ן</option>
+                            <option value="שיפוצים">שיפוצים</option>
+                            <option value="לימודים">לימודים</option>
+                            <option value="אחר">אחר</option>
                         </select>
                         <label htmlFor="more">פרטים נוספים:</label>
                         <input
                             id="more"
                             value={more}
                             onChange={(e)=> setMore(e.target.value)}
-                            placeholder="ספר/י לנו בקצרה איך נוכל לעזור"
+                            placeholder="כל דבר נוסף שתרצ/י לספר לנו"
                             required
                         />
                         <div className="button-div">
@@ -67,4 +75,4 @@ function ContactFrame(){
     )
 }
 
-export default ContactFrame;
+export default JobsForm;

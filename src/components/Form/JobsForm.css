@@ -1,0 +1,85 @@
+.job {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    padding: 10px;
+    background-color: rgba(248, 128, 85, 0.8);
+}
+
+/* .content-wrapper { */
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    /* gap: 10px; */
+/* } */
+
+
+.job p{
+    color: #ffffff;
+    direction: rtl;
+    font-family: "Fredoka-Bold";
+    font-size: 4.3vw;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+    position: relative;
+    text-shadow: 0px 4px 4px #00000040;
+    width: fit-content;
+}
+
+.job-form {
+    width: 200px;
+    margin-left: auto; 
+    direction: rtl;
+}
+
+.job-form label {
+    color: #ffffff;
+    display: block; 
+    /* margin-bottom: 8px;  */
+    font-family: "Fredoka-Medium";
+    font-size: 30px;
+}
+
+.job-form input {
+    width: 60vw;
+    padding: 8px; 
+    margin-bottom: 16px; 
+    font-size: 20px;
+    font-family: "Fredoka-Medium";
+}
+
+.job-form select {
+    width: 61.4vw;
+    padding: 8px;
+    margin-bottom: 16px;
+    font-size: 20px;
+    font-family: "Fredoka-Medium";
+}
+
+#more {
+    height: 7vh;
+}
+
+.button-div {
+    display: flex;
+    justify-content: center;
+    width: 60vw;
+}
+
+.button-div button{
+    background-color: white;
+    color: #f88055;
+    font-family: "Fredoka-Medium";
+    font-size: 2vw;
+    box-shadow: 0px 4px 4px #00000040;
+    border-radius: 10px;
+    border: none;
+}
+
+.button-div button:hover{
+    background-color: #f6f6f6f6;
+}
