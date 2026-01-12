@@ -1,29 +1,55 @@
 import React from "react";
-import Button from "../buttons/Button";
-import DotIcon from "../../icons/DotIcom";
-import "./MainFrame.css"
+import "./MainFrame.css";
 
-function MainFrame(){
+function MainFrame() {
+  return (
+    <section className="main-frame" id="home">
+      <div className="main-frame__container">
+        <div className="main-frame__grid">
+          {/* Text */}
+          <div className="main-frame__text">
+            <h1 className="hero-title">
+              נדל״ן מבוסס
+              <br />
+              <span className="hero-title-accent">אמון ובהירות</span>
+            </h1>
 
-    return (
-        <div className="main-frame">
-            <div className="div-2">
-                <div className="div-3">
-                    <div className="text-wrapper-6">השכרה</div>
-                    <DotIcon className="icon-dot"/>
-                    <div className="text-wrapper-6">קנייה</div>
-                    <DotIcon className="icon-dot"/>
-                    <div className="text-wrapper-6">מכירה</div>
-                </div>
-                <div className="text-wrapper-7">LevelUP</div>
-                <div className="text-wrapper-8">יועצי הנדל״ן שלכם</div>
-                <Button className="button-instance" text="ליצירת קשר" path="/contact"></Button>
+            <p className="hero-subtitle">
+              אנו מלווים משקיעים ורוכשים פרטיים בתהליך רכישת נדל״ן באופן מקצועי, שקוף ומותאם אישית.
+              בלי לחץ, בלי התחייבות - רק ליווי מומחים.
+            </p>
+
+            <div className="hero-actions">
+              <a className="hero-btn hero-btn-primary" href="/contact">
+                תיאום שיחת היכרות
+              </a>
+              <a className="hero-btn hero-btn-secondary" href="/finds">
+                הפרויקטים שלנו
+              </a>
             </div>
-            {/* <Who className="who-instance"/> */}
-            {/* <ClientsTell className="clients-tell-instance"/> */}
-            {/* <Talk className="talk-instance"/> */}
+          </div>
+
+          {/* Image */}
+          <div className="main-frame__image-wrap">
+            <div className="main-frame__image-card">
+              <img
+                src="/Images/hero-team-enhanced.png"
+                alt="צוות LevelUP"
+                className="hero-image"
+              />
+              <div className="hero-badge">
+                <div className="hero-badge-icon">+15</div>
+                <div className="hero-badge-text">
+                  <div className="hero-badge-title">שנות ניסיון</div>
+                  <div className="hero-badge-sub">בשוק הנדל״ן</div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    )
+      </div>
+    </section>
+  );
 }
 
 export default MainFrame;

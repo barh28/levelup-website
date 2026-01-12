@@ -4,26 +4,69 @@
   font-weight: 500;
   font-stretch: 100%;
   font-display: swap;
-  src: url("./Fonts/Fredoka/static/Fredoka-Medium.ttf") format('truetype');
-  unicode-range: U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;
+  src: url("./Fonts/Discovery/Discovery_Fs-Medium.woff2") format('woff2'),
+       url("./Fonts/Discovery/Discovery_Fs-Medium.woff") format('woff');
 }
 
 @font-face {
   font-family: 'Fredoka-Regular';
-  src: url("./Fonts/Fredoka/static/Fredoka-Regular.ttf") format('truetype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./Fonts/Discovery/Discovery_Fs-Regular.woff2") format('woff2'),
+       url("./Fonts/Discovery/Discovery_Fs-Regular.woff") format('woff');
 }
 
 @font-face {
   font-family: 'Fredoka-Bold';
-  src: url("./Fonts/Fredoka/static/Fredoka-Bold.ttf") format('truetype');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("./Fonts/Discovery/Discovery_Fs-Bold.woff2") format('woff2'),
+       url("./Fonts/Discovery/Discovery_Fs-Bold.woff") format('woff');
 }
 
 @font-face {
   font-family: 'Arial Rounded MT Bold-Regular';
-  src: url("./Fonts/arial-rounded-mt-bold/ARLRDBD.ttf") format('truetype');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("./Fonts/Discovery/Discovery_Fs-Bold.woff2") format('woff2'),
+       url("./Fonts/Discovery/Discovery_Fs-Bold.woff") format('woff');
 }
 
 @font-face {
   font-family: "Arimo hebrew Subset-Regular";
-  src: url("./Fonts/Arimo/static/Arimo-SemiBold.ttf") format('truetype');
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("./Fonts/Discovery/Discovery_Fs-Demibold.woff2") format('woff2'),
+       url("./Fonts/Discovery/Discovery_Fs-Demibold.woff") format('woff');
+}
+
+@font-face {
+  font-family: "Talent-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./Fonts/Talent/Talent_FS-Regular.woff2") format("woff2"),
+       url("./Fonts/Talent/Talent_FS-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Talent-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("./Fonts/Talent/Talent_FS-Medium.woff2") format("woff2"),
+       url("./Fonts/Talent/Talent_FS-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Talent-Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("./Fonts/Talent/Talent_FS-Bold.woff2") format("woff2"),
+       url("./Fonts/Talent/Talent_FS-Bold.woff") format("woff");
 }
